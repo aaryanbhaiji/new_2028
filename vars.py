@@ -8,12 +8,12 @@ API_HASH = environ.get("API_HASH", "c5ec016af7d2cb637278b715f4f5a389")
 BOT_TOKEN = environ.get("BOT_TOKEN", "8015357858:AAFfGB0OLXQyg6Y_nn5lYbhNixwxGT9ZIl8")
 
 OWNER = int(environ.get("OWNER", "953685850"))
-CREDIT = environ.get("CREDIT", "@bindasboy010")
+CREDIT = environ.get("CREDIT", "@heroku_cc_bot")
 
 TOTAL_USER = os.environ.get('TOTAL_USERS', '953685850').split(',')
 TOTAL_USERS = [int(user_id) for user_id in TOTAL_USER]
 
-AUTH_USER = os.environ.get('AUTH_USERS', '953685850').split(',')
+AUTH_USER = os.environ.get('AUTH_USERS', '953685850,6009370025').split(',')
 AUTH_USERS = [int(user_id) for user_id in AUTH_USER]
 if int(OWNER) not in AUTH_USERS:
     AUTH_USERS.append(int(OWNER))
